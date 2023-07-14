@@ -5,3 +5,15 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html {
+    height: 100vh;
+}
+
+body {
+    position: absolute;
+    background: no-repeat url('img/bg-img.png');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
