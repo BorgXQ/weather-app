@@ -71,11 +71,16 @@ body {
     margin-top: 1.2rem;
 }
 
-.temp-unit-btn {
+.temp-unit-btn-f,
+.temp-unit-btn-c {
     text-align: center;
     font-size: 0.75rem;
     font-weight: 600;
     margin-bottom: 2rem;
+}
+
+.temp-unit-btn-c {
+    display: none;
 }
 
 .search-bar {
