@@ -77,6 +77,7 @@ body {
     font-size: 0.75rem;
     font-weight: 600;
     margin-bottom: 2rem;
+    cursor: pointer;
 }
 
 .temp-unit-btn-c {
