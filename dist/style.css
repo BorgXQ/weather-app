@@ -18,14 +18,6 @@ body {
     background-image: url('img/bg-img.png');
 }
 
-.overlay {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    filter: opacity(30%);
-}
-
 main {
     background-color: transparent;
     position: relative;
