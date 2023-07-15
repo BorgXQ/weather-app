@@ -25,18 +25,28 @@ body {
 }
 
 .top-info {
+    height: calc(100vh - 2 * 5rem);
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 }
 
+.left-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* top left styling */
 .condition {
+    text-align: center;
     font-size: 2.5rem;
     font-weight: 500;
 }
 
 .location {
+    text-align: center;
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 2;
@@ -44,23 +54,27 @@ body {
 
 .date,
 .time {
+    text-align: center;
     font-size: 0.9rem;
     font-weight: 600;
 }
 
 .temperature {
+    text-align: center;
     font-size: 4rem;
     font-weight: 700;
     margin-top: 1.2rem;
 }
 
 .temp-unit-btn {
+    text-align: center;
     font-size: 0.75rem;
     font-weight: 600;
     margin-bottom: 2rem;
 }
 
 .search-bar {
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -109,6 +123,13 @@ body {
 }
 
 /* top right styling */
+.right-info {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
 .detail {
     display: flex;
     margin-bottom: 2em;
@@ -129,3 +150,6 @@ body {
     font-size: 1.6rem;
     font-weight: 600;
 }
+
+
+/* media queries */
