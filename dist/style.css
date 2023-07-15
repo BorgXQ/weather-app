@@ -46,27 +46,27 @@ body {
 /* top left styling */
 .condition {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 500;
 }
 
-.location {
+.city {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    line-height: 2;
+    line-height: 3; /* 2 */
 }
 
 .date,
 .time {
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
 .temperature {
     text-align: center;
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 700;
     margin-top: 1.2rem;
 }
@@ -74,7 +74,7 @@ body {
 .temp-unit-btn-f,
 .temp-unit-btn-c {
     text-align: center;
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 600;
     margin-bottom: 2rem;
     cursor: pointer;
@@ -89,12 +89,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 30px;
+    height: 40px;
     max-width: 200px;
     margin-top: 1rem;
     border-bottom: 2px solid var(--text-color);
     border-radius: 3px;
-    padding: 6px 12px;
+    padding: 8px 14px;
 }
 
 .search-bar-input {
@@ -118,8 +118,8 @@ body {
 }
 
 .search-icon {
-    height: 18px;
-    width: 18px;
+    height: 20px;
+    width: 20px;
     background-image: url('img/search-icon.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -168,6 +168,54 @@ body {
 @media (max-width: 600px) {
     body {
         padding: 4rem;
+    }
+
+    .condition {
+        font-size: 2.5rem;
+    }
+    
+    .city {
+        font-size: 1.2rem;
+        line-height: 3;
+    }
+    
+    .date,
+    .time {
+        font-size: 0.9rem;
+    }
+    
+    .temperature {
+        font-size: 4rem;
+        margin-top: 1.5rem;
+    }
+    
+    .temp-unit-btn-f,
+    .temp-unit-btn-c {
+        font-size: 0.75rem;
+        margin-bottom: 1.8rem;
+    }
+    
+    .search-bar {
+        height: 30px;
+        margin-top: 1rem;
+        border-radius: 3px;
+        padding: 6px 12px;
+    }
+    
+    .search-bar-input {
+        height: 100%;
+        max-width: 150px;
+        font-size: 0.8rem;
+    }
+    
+    .search-icon {
+        height: 18px;
+        width: 18px;
+    }
+    
+    .error-msg {
+        font-size: 0.75rem;
+        margin-top: 1rem;
     }
 
     .top-info {
