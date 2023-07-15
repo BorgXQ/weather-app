@@ -2,24 +2,60 @@ const getApiForecast = async () => {
     const response = await fetch(urlApi, {mode: 'cors'});
     const data = await response.json();
 
+    console.log(data);
     return data;
 }
 
 //top left
+const condition = document.getElementById('condition');
 const getApiCondition = async () => {
     const response = await fetch(urlApi, {mode: 'cors'});
     const data = await response.json();
-
-    console.log(data.current.condition.text)
-    return data;
+    const oldConditionData = data.current.condition.text;
+    const arr = oldConditionData.split(' ');
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+    }
+    const newConditionData = arr.join(' ');
+    condition.textContent = newConditionData;
 }
 
+const currentLocation = document.getElementById('currentLocation');
 const getApiLocation = async () => {
     const response = await fetch(urlApi, {mode: 'cors'});
     const data = await response.json();
 
-    console.log(data.location.name)
-    return data;
+    currentLocation.textContent = data.location.name;
+}
+
+const todayDate = document.getElementById('todayDate');
+const getApiDate = async () => {
+    const response = await fetch(urlApi, {mode: 'cors'});
+    const data = await response.json();
+    const dateAndTime = data.location.localtime;
+    const timeArray = dateAndTime.split(' ');
+    const date = timeArray[0];
+
+    todayDate.textContent = date;
+}
+
+const todayTime = document.getElementById('todayTime');
+const getApiTime = async () => {
+    const response = await fetch(urlApi, {mode: 'cors'});
+    const data = await response.json();
+    const dateAndTime = data.location.localtime;
+    const timeArray = dateAndTime.split(' ');
+    const time = timeArray[1];
+
+    todayTime.textContent = time;
+}
+
+const temperature = document.getElementById('temperature');
+const getApiTemp = async () => {
+    const response = await fetch(urlApi, {mode: 'cors'});
+    const data = await response.json();
+
+    temperature.textContent = `${data.current.temp_c} °C`;
 }
 
 //top right
@@ -66,11 +102,17 @@ const getApiWindSpeed = async () => {
 }
 
 
-let urlApi = 'https://api.weatherapi.com/v1/forecast.json?key=31ff6a003cc14b088ca164738231407&q=singapore'
+let urlApi = 'https://api.weatherapi.com/v1/forecast.json?key=31ff6a003cc14b088ca164738231407&q=london'
+
+getApiForecast();
 
 getApiCondition();
+getApiLocation();
+getApiDate();
+getApiTime();
+getApiTemp();
+
 getApiFeelsLikeC();
 getApiHumidity();
 getApiRainChance();
 getApiWindSpeed();
-
