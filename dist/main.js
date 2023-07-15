@@ -101,8 +101,23 @@ const getApiWindSpeed = async () => {
     return data;
 }
 
+const sunrise = document.getElementById('sunrise');
+const getApiSunrise = async () => {
+    const response = await fetch(urlApi, {mode: 'cors'});
+    const data = await response.json();
 
-let urlApi = 'https://api.weatherapi.com/v1/forecast.json?key=31ff6a003cc14b088ca164738231407&q=london'
+    sunrise.textContent = data.forecast.forecastday[0].astro.sunrise;
+}
+
+const sunset = document.getElementById('sunset');
+const getApiSunset = async () => {
+    const response = await fetch(urlApi, {mode: 'cors'});
+    const data = await response.json();
+
+    sunset.textContent = data.forecast.forecastday[0].astro.sunset;
+}
+
+let urlApi = 'https://api.weatherapi.com/v1/forecast.json?key=31ff6a003cc14b088ca164738231407&q=singapore'
 
 getApiForecast();
 
@@ -116,3 +131,8 @@ getApiFeelsLikeC();
 getApiHumidity();
 getApiRainChance();
 getApiWindSpeed();
+getApiSunrise();
+getApiSunset();
+
+
+// Display F vs C
