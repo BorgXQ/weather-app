@@ -1,0 +1,141 @@
+@media (max-width: 600px) {
+    body {
+        padding: 4rem;
+    }
+
+    .condition {
+        font-size: 2.5rem;
+    }
+    
+    .city {
+        font-size: 1.2rem;
+        line-height: 3;
+    }
+    
+    .date,
+    .time {
+        font-size: 0.9rem;
+    }
+    
+    .temperature {
+        font-size: 4rem;
+        margin-top: 1.5rem;
+    }
+    
+    .temp-unit-btn-f,
+    .temp-unit-btn-c {
+        font-size: 0.75rem;
+        margin-bottom: 1.8rem;
+    }
+    
+    .search-bar {
+        height: 30px;
+        margin-top: 1rem;
+        border-radius: 3px;
+        padding: 6px 12px;
+    }
+    
+    .search-bar-input {
+        height: 100%;
+        max-width: 150px;
+        font-size: 0.8rem;
+    }
+    
+    .search-icon {
+        height: 18px;
+        width: 18px;
+    }
+    
+    .error-msg {
+        font-size: 0.75rem;
+        margin-top: 1rem;
+    }
+
+    .top-info {
+        height: calc(100vh - 2 * 4rem);
+    }
+
+    .detail-icon {
+        width: 1.7rem;
+        margin-right: 0.5rem;
+    }
+
+    .detail-label {
+        font-size: 0.7rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .detail-data {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .condition {
+        font-size: 2.3rem;
+    }
+    
+    .location {
+        font-size: 1rem;
+        line-height: 1.9;
+    }
+    
+    .date,
+    .time {
+        font-size: 0.7rem;
+    }
+    
+    .temperature {
+        font-size: 3.8rem;
+        margin-top: 1.1rem;
+    }
+    
+    .temp-unit-btn {
+        font-size: 0.65rem;
+        margin-bottom: 1.9rem;
+    }
+    
+    .search-bar {
+        height: 26px;
+        margin-top: 0.9rem;
+        border-bottom: 2px solid var(--text-color);
+        border-radius: 2px;
+        padding: 4px 10px;
+    }
+    
+    .search-bar-input {
+        font-size: 0.8rem;
+    }
+    
+    .search-icon {
+        height: 15px;
+        width: 15px;
+    }
+    
+    .error-msg {
+        font-size: 0.65rem;
+        margin-top: 0.9rem;
+    }
+
+    .right-info {
+        display: block;
+    }
+
+    .detail {
+        margin-bottom: 1em;
+    }
+
+    .detail-icon {
+        width: 1.6rem;
+        margin-right: 0.4rem;
+    }
+
+    .detail-label {
+        font-size: 0.7rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .detail-data {
+        font-size: 1.4rem;
+    }
+}

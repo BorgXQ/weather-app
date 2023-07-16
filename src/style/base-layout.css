@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --text-color: #F5F5F5;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    min-height: 100vh;
+    background-image: url('img/wallpaperflare.com_wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--text-color);
+    font-family: montserrat, sans-serif;
+
+    padding: 5rem;
+}
+
+.top-info {
+    height: calc(100vh - 2 * 5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* top styling */
+.left-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.condition {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.city {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 3; /* 2 */
+}
+
+.date,
+.time {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.temperature {
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-top: 1.2rem;
+}
+
+.temp-unit-btn-f,
+.temp-unit-btn-c {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.temp-unit-btn-c {
+    display: none;
+}
+
+
+/* bottom styling */
+.right-info {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.detail-icon {
+    width: 1.9rem;
+    margin-right: 0.6rem;
+}
+
+.detail-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.detail-data {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
