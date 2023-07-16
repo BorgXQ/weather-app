@@ -19,7 +19,7 @@ html {
 body {
     height: 100%;
     min-height: 100vh;
-    background-image: url('img/wallpaperflare.com_wallpaper.jpg');
+    background-image: url('../asset/wallpaperflare.com_wallpaper.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
