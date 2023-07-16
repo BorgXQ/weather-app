@@ -1,4 +1,4 @@
-import * as utility from 'utilFunc.js';
+import * as utility from './utilFunc.js';
 
 // render left-info weather data
 function renderWeatherDataOne(data, units) {
