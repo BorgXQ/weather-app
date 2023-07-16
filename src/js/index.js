@@ -1,6 +1,6 @@
 import '../style/main.css';
-import * as apiFunc from 'getApiFunc.js';
-import * as domFunc from 'domFunc.js';
+import * as apiFunc from './getApiFunc.js';
+import * as domFunc from './domFunc.js';
 
 const searchIcon = document.querySelector('.search-icon');
 const searchBar = document.querySelector('.search-bar-input');
