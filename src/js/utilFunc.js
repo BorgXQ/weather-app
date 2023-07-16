@@ -6,3 +6,7 @@ const capitalize = (words) => {
     }
     return separateWord.join(' ');
 }
+
+export {
+  capitalize
+};
